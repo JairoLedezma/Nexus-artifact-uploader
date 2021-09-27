@@ -3,7 +3,7 @@ pipeline {
     tools{
         oc 'oc'
         maven 'maven-3.6.3'
-        jdk 'jdk8'
+        jdk 'jdk11'
     }
     environment {
         // This can be nexus3 or nexus2
