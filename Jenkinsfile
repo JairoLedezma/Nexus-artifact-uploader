@@ -109,7 +109,9 @@ pipeline {
                     } else {
                         error "*** File: ${artifactPath}, could not be found";
                     }
-         }
+                }
+            }
+        }
         stage ('Building and Pushing Image to Quay') {
             steps {
                 script {
@@ -137,6 +139,4 @@ pipeline {
         }
     }
 
-}
-}
 }
